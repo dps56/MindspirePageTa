@@ -1,6 +1,7 @@
 import { Page } from '@playwright/test';
 import { TopMenuPage } from './pages/topMenu-page';
 import { MindspireLandingPage } from './pages/landingPage-page';
+import { CareerPage } from './pages/career-page';
 
 
 export class PageManager {
@@ -16,6 +17,10 @@ export class PageManager {
 
     public get mindspireLandingPage() {
         return new MindspireLandingPage(this.page);
+    }
+
+    public get careerPage() {
+        return new CareerPage(this.page);
     }
 
 }

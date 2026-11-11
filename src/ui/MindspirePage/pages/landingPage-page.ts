@@ -9,7 +9,6 @@ export class MindspireLandingPage extends BasePage {
 
     constructor(page: Page) {
         super(page);
-        page.setDefaultTimeout(5000);
     }
 
     async openMindspire() {
